@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJU froms</title>
+
+
+    <link rel="stylesheet" href="/css/form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
+</head>
+
+<body>
+
+    <!-- 
+ <form action=""> -->
+
+    <!-- กรอบ -->
+    <div class="frame">
+        <div class="container">
+            <!-- หัวเรื่อง -->
+            <div class="container">
+                <div class="row">
+
+                    <div class="head1">
+                        <div class="head">มจท.10</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="container">
+                <div class="col-md-12" style="text-align: center;">
+                    <img id="logo_mj" src="https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png">
+                </div>
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+
+                    <div>
+                        <h1 class="help_text">คำร้องขอพักการศึกษา<span class="badge bg-secondary"></span></h1>
+                        <h5 class="helpp_text">(สำหรับนักศึกษาที่ได้ศึกษามาเเล้วไม่น้อยกว่าหนึ่งภาคการศึกษา)<span class="badge bg-secondary"></span></h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form class="row g-3 needs-validation container" novalidate>
+
+                <!-- วันที่กรอกเอกสาร -->
+                <div class="col-md-12 p-3">
+                    <p>วันที่กรอกเอกสาร <input type="date"></p>
+                </div>
+
+                <!-- เรื่อง -->
+                <div class="col-md-12">
+                    <div class="col-md-6 p-2">
+                        <p>เรื่อง การขอลาพักการศีกษาในภาคเรียน/ปีการศึกษา
+                            <select name="ภาคการเรียนปีการศึกษา" id="ภาคการเรียนปีการศึกษา">
+                                <option value="">-ภาคเรียน/ปีการศึกษา-</option>
+                                <option value="1/2563">1/2563</option>
+                                <option value="2/2563">2/2563</option>
+                                <option value="1/2564">1/2564</option>
+                                <option value="2/2564">2/2564</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- คณะ -->
+                <div class="col-md-12">
+                    <div class="col-md-8 p-2">
+                        <p>เรียน คณบดีคณะ
+                            <select name="คณะ" id="คณะ">
+                                <option value="">-เลือกคณะ-</option>
+                                <option value="1">คณะผลิตกรรมการเกษตร</option>
+                                <option value="2">คณะวิทยาศาสตร์</option>
+                                <option value="3">คณะบริหารธุรกิจ</option>
+                                <option value="4">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                                <option value="5">คณะสถาปัตยกรรมศาสตร์และออกแบบสิ่งแวดล้อม</option>
+                                <option value="6">คณะสารสนเทศและการสื่อสาร</option>
+                                <option value="7">คณะศิลปศาสตร์</option>
+                                <option value="8">คณะวิศวกรรมศาสตร์และอุตสาหกรรมการเกษตร</option>
+                                <option value="9">คณะพัฒนาการท่องเที่ยว</option>
+                                <option value="10">คณะเศรษฐศาสตร์</option>
+                                <option value="11">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                                <option value="12">วิทยาลัยนานาชาติ</option>
+                                <option value="13">วิทยาลัยบริหารศาสตร์</option>
+                                <option value="14">วิทยาลัยพลังงานทดแทน</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- คำนำหน้า -->
+                <div class="col-md-12">
+                    <p>ข้าพเจ้า
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">นาย</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">นาง</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">นางสาว</label>
+                    </p>
+                </div>
+
+                <!-- ชื่อ -->
+                <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">ชื่อ</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="" placeholder="ชื่อ" required>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกชื่อ.
+                    </div>
+                </div>
+
+                <!-- นามสกุล -->
+                <div class="col-md-6">
+                    <label for="validationCustom02" class="form-label">นามสกุล</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" placeholder="นามสกุล" required>
+                    <div class="valid-feedback">
+                        กรอกเรียบร้อย!
+                    </div>
+                    <div class="invalid-feedback">
+                        กรุณากรอกนามสกุล.
+                    </div>
+                </div>
+
+                <!-- รหัสนักศึกษา -->
+                <div class="col-md-6">
+                    <p>
+                        <label for="validationCustomUsername" class="form-label">รหัสนักศึกษา</label>
+                        <input type="text" name="num_card" class="form-control" placeholder="กรอกรหัสนักศึกษา" minlength="10" maxlength="10" value="" required>
+                        <div class="valid-feedback"></div>
+                    </p>
+                </div>
+
+                <!-- เบอร์โทรศัพท์ -->
+                <div class="col-md-6">
+                    <p>
+                        <label for="validationCustomUsername" class="form-label">เบอร์โทรศัพท์</label>
+                        <input type="text" name="phone_num" class="form-control" placeholder="กรอกเบอร์โทรศัพท์" minlength="10" maxlength="10" value="" required>
+                        <div class="valid-feedback"></div>
+                    </p>
+                </div>
+
+                <!-- หลักสูตร -->
+                <div class="col-md-12">
+                    <p>หลักสูตร ปริญญาตรี
+                        <input type="radio" id="หลักสูตร" name="หลักสูตร" value="4-5ปี">
+                        <label for="ปกติ">4-5 ปี</label>
+                        <input type="radio" id="female" name="หลักสูตร" value="4ปีเทียบเข้า">
+                        <label for="เทียบเข้า">4 ปีเทียบเข้า</label>
+                        <input type="radio" id="female" name="หลักสูตร" value="ภาคปกติ">
+                        <label for="ภาคปกติ">ภาคปกติ</label>
+                        <input type="radio" id="female" name="หลักสูตร" value="ภาคสมทบ">
+                        <label for="ภาคสมทบ">ภาคสมทบ</label>
+                    </p>
+                </div>
+
+                <!-- คณะ -->
+                <div class="col-md-12">
+                    <div class="col-md-12 ">
+                        <p>คณะ
+                            <select name="คณะ" id="คณะ">
+                                <option value="">-เลือกคณะ-</option>
+                                <option value="1">คณะผลิตกรรมการเกษตร</option>
+                                <option value="2">คณะวิทยาศาสตร์</option>
+                                <option value="3">คณะบริหารธุรกิจ</option>
+                                <option value="4">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ</option>
+                                <option value="5">คณะสถาปัตยกรรมศาสตร์และออกแบบสิ่งแวดล้อม</option>
+                                <option value="6">คณะสารสนเทศและการสื่อสาร</option>
+                                <option value="7">คณะศิลปศาสตร์</option>
+                                <option value="8">คณะวิศวกรรมศาสตร์และอุตสาหกรรมการเกษตร</option>
+                                <option value="9">คณะพัฒนาการท่องเที่ยว</option>
+                                <option value="10">คณะเศรษฐศาสตร์</option>
+                                <option value="11">คณะสัตวศาสตร์และเทคโนโลยี</option>
+                                <option value="12">วิทยาลัยนานาชาติ</option>
+                                <option value="13">วิทยาลัยบริหารศาสตร์</option>
+                                <option value="14">วิทยาลัยพลังงานทดแทน</option>
+                            </select>
+                            <!-- สาขา -->
+                            <label for="validationCustom01" class="form-label">สาขา</label>
+                            <input type="text" class="form" id="validationCustom01" value="" placeholder="สาขา" required>
+                            <div class="valid-feedback">
+                                กรอกเรียบร้อย!
+                            </div>
+                            <div class="invalid-feedback">
+                                กรุณากรอกชื่อ.
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- อีเมล
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">อีเมล</label>
+                    <div class="input-group has-validation">
+                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon2" required>
+                        <span class="input-group-text" id="basic-addon2">@mju.ac.th</span>
+
+                        <div class="valid-feedback">
+                            กรอกเรียบร้อย!
+                        </div>
+                        <div class="invalid-feedback">
+                            กรุณากรอกอีเมล.
+                        </div>
+                    </div>
+                </div> -->
+
+
+
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">City</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">State</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="validationCustom05" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to terms and conditions
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+
+
+
+
+        </div>
+        </form>
+    </div>
+
+
+</body>
+
+
+
+</html>

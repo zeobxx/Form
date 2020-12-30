@@ -1,0 +1,31 @@
+            @media only screen and (min-width: 400px) {}
+            
+            @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800&display=swap);
+            .head1 {
+                padding-top: 2rem;
+                padding-left: 1rem;
+            }
+            
+            #logo_mj {
+                width: 90px;
+                height: 90px;
+                background: url(https://upload.wikimedia.org/wikipedia/th/4/43/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B9%82%E0%B8%88%E0%B9%89_edit.png) 0 0;
+                margin-top: 1rem;
+            }
+            
+            .help_text {
+                text-align: center;
+                margin-top: 1rem;
+            }
+            
+            .helpp_text {
+                text-align: center;
+                margin-top: 0.7rem;
+            }
+            /* ื.col { text-align: center; } */
+            
+            .head {
+                text-align: right;
+            }
+            /* input[type=text] { width: 100%; padding: 12px 18px;
+    margin-left: 0.7rem; box-sizing: border-box; }
