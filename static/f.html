@@ -113,11 +113,11 @@
                 <!-- คำนำหน้า -->
                 <div class="col-md-12">
                     <p>ข้าพเจ้า
-                        <input type="checkbox" id="male" name="gender" value="male" required>
+                        <input type="radio" id="male" name="gender" value="male" required>
                         <label for="male">นาย</label>
-                        <input type="checkbox" id="female" name="gender" value="female" required>
+                        <input type="radio" id="female" name="gender" value="female" required>
                         <label for="female">นาง</label>
-                        <input type="checkbox" id="other" name="gender" value="other" required>
+                        <input type="radio" id="other" name="gender" value="other" required>
                         <label for="other">นางสาว</label>
                     </p>
                 </div>
@@ -546,11 +546,11 @@
                 <!-- คำนำหน้า -->
                 <div class="col-md-12">
                     <p>ตามที่
-                        <input type="checkbox" id="male" name="gender" value="male" required>
+                        <input type="radio" id="male" name="gender" value="male" required>
                         <label for="male">นาย</label>
-                        <input type="checkbox" id="female" name="gender" value="female" required>
+                        <input type="radio" id="female" name="gender" value="female" required>
                         <label for="female">นาง</label>
-                        <input type="checkbox" id="other" name="gender" value="other" required>
+                        <input type="radio" id="other" name="gender" value="other" required>
                         <label for="other">นางสาว</label>
                     </p>
                 </div>
@@ -695,11 +695,11 @@
                 <!-- คำนำหน้า -->
                 <div class="col-md-12">
                     <p>ข้าพเจ้า
-                        <input type="checkbox" id="male" name="gender" value="male" required>
+                        <input type="radio" id="male" name="gender" value="male" required>
                         <label for="male">นาย</label>
-                        <input type="checkbox" id="female" name="gender" value="female" required>
+                        <input type="radio" id="female" name="gender" value="female" required>
                         <label for="female">นาง</label>
-                        <input type="checkbox" id="other" name="gender" value="other" required>
+                        <input type="radio" id="other" name="gender" value="other" required>
                         <label for="other">นางสาว</label>
                     </p>
                 </div>
@@ -741,28 +741,45 @@
                         <input type="file" class="form-control" id="signone" placeholder="รูปภาพลายเซ็นต์" required>
                     </div>
                 </div>
+
+                <!-- ใบรับรองแพทย์ -->
+                <div class="row g-3 p-5">
+                    <div class="col-md-6">
+                        <h3>ใบรับรองแพทย์(ถ้ามี)</h3>
+                        <div class="input">
+                            <label for="signone" class="form-label">รูปภาพลายใบรับรองแพทย์</label>
+                            <input type="file" class="form-control" id="signone" placeholder="รูปภาพลายเซ็นต์" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>เอกสารอื่นๆ(ถ้ามี)</h3>
+                        <div class="input">
+                            <label for="signone" class="form-label">รูปภาพเอกสารอื่นๆ</label>
+                            <input type="file" class="form-control" id="signone" placeholder="รูปภาพลายเซ็นต์" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ขั้นตอนการเสนอคําร้องลาพักการศึกษา -->
+                <div class="col-md-8">
+                    <b>ขั้นตอนการเสนอคําร้องลาพักการศึกษา</b>
+                    <P>
+                        1. นักศึกษากรอกคําร้องขอลาพักการศึกษา<br> 2. เสนอคําร้องต่อหัวหน้ากลุ่มภารกิจทะเบียนเรียน ประมวลผลฯ<br> 3. เสนอคําร้องต่อผู้อํานวยการสํานักบริหารและพัฒนาวิชาการ (ชั้น 3 อาคารอํานวย ยศสุข) <br> 4. เสนอคําร้องต่ออาจารย2ที่ปรึกษา
+                        (คณะที่นักศึกษาสังกัด)
+                        <br> 5. เสนอคําร้องต่อประธานคณะกรรมการประจําหลักสูตร (คณะที่นักศึกษาสังกัด)<br> 6. เสนอคําร้องต่อคณบดี เพื่ออนุมัติ (คณะที่นักศึกษาสังกัด)<br> 7. นําคําร้องไปชําระเงิน (กองคลัง ชั้น 2 อาคารอิงคศรีกสิการ)<br> 8. นําคําร้องขอลาพักการศึกษา
+                        ที่ชําระเงินแล้ว (ยื่นต่อกลุ่มภารกิจทะเบียนเรียนฯ) เพื่อบันทึกฐานข้อมูลนักศึกษาต่อไป <br> 9. เจ้าหน้าที่ทะเบียนฯ บันทึกลงฐานข้อมูล นักศึกษาสามารถตรวจสอบได้ในวันต่อไป</p>
+                </div>
+
+
+                <div class="col-12" style="text-align: center;">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
         </div>
 
-        <!-- ใบรับรองแพทย์ -->
-        <div class="row g-3 p-5">
-            <div class="col-md-6">
-                <h3>ใบรับรองแพทย์(ถ้ามี)</h3>
-                <div class="input">
-                    <label for="signone" class="form-label">รูปภาพลายใบรับรองแพทย์</label>
-                    <input type="file" class="form-control" id="signone" placeholder="รูปภาพลายเซ็นต์" required>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <h3>เอกสารอื่นๆ(ถ้ามี)</h3>
-                <div class="input">
-                    <label for="signone" class="form-label">รูปภาพเอกสารอื่นๆ</label>
-                    <input type="file" class="form-control" id="signone" placeholder="รูปภาพลายเซ็นต์" required>
-                </div>
-            </div>
-        </div>
-        <div class="col-12" style="text-align: center;">
-            <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
+
+
+
+
         </form>
     </div>
     </div>
